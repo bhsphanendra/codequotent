@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+float a,b,c;
+char ope;
+scanf("%f",&a);
+
+scanf("%f\n",&b);
+scanf("%c",&ope);
+
+switch(ope)
+{
+  case '+': c=a+b;
+    		printf("\n%.0f",c);
+    		break;
+  case '-': c=a-b;
+    		printf("\n%.0f",c);
+    		break;
+  case '*': c=a*b;
+    		printf("\n%.0f",c);
+    		break;
+  case '/': c=(float)a/b;
+    		printf("\n%.0f",c);
+    		break;
+  case '%': c=(int)a%(int)b;
+    		printf("\n%f,c");
+    		break;
+  default : printf("\nEnter valid arithmetic operator");
+}
+return(0);
+}
