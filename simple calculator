@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main()
+{
+  float a,b,c;
+  char op;
+  scanf("%f\n",&a);
+  scanf("%c\n",&op);
+  scanf("%f",&b);
+  
+  switch(op)
+  {
+    case '+': c=a+b;
+      		  printf("%.2f\n",c);
+      		  break;
+    case '-': c=a-b;
+      		  printf("%.2f\n",c);
+      		  break;
+    case '*': c=a*b;
+      		  printf("%.2f\n",c);
+      		  break;
+    case '/': c=a/b;
+      		  printf("%.2f\n",c);
+      		  break;
+  }
+  return 0;
+}
