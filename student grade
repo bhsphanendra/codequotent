@@ -1,22 +1,28 @@
 #include <stdio.h>
-
+/* Include other headers as needed */
 int main()
 {
-  int marks;
-  marks = 64;
-
-  if(marks >= 90)
-    printf("A+");
-  else if(marks >= 80)
+  int g;
+  scanf("%d",&g);
+  if(g>=75)
+  {
     printf("A");
-  else if(marks >= 70)
+  }
+  else if(g>=60 && g<75)
+  {
     printf("B");
-  else if(marks >= 50)
+  }
+  else if(g>=55 && g<60)
+  {
     printf("C");
-  else if(marks >= 40)
+  }
+  else if(g>=50 && g<55)
+  {
     printf("D");
+  }
   else
-    printf("F");
-
-  return 0;
+  {
+    printf("E");
+  }
+return 0;
 }
